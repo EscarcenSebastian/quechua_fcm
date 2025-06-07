@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('fondo-unmsm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    /* para que el texto se vea */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #800000cc;
+    /* rojo UNMSM con transparencia */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: background 0.3s;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #b30000;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+}
